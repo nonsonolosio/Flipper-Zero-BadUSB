@@ -31,7 +31,7 @@ Apre una shell su os linux (versione molto base)
 
 
 -=Windows_ReverseShell=-
-Apre una shell su os linux (versione molto base)
+Apre una shell su os windows (versione molto base)
 
 
 -=ShadowCopySAM_Dump=-
